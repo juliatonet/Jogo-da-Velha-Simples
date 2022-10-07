@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da Velha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>Jogo da Velha</h1>
+    <h2>Jogador da vez: <span id="sJogadorDaVez">X</span></h2>
+    <h2>Vencedor: <span id="exibirVencedor"></span></h2>
+    <h3>Placar (Jogador X vs Jogador O): <span id="placarX">0</span>x<span id="placarO">0</span> </h3>
+  </header>
+
+  <main>
+    <div class="jogodavelha">
+      <div class="casasjogo">
+        <div class="tile_row">
+          <span class="tile" id="casa1" onclick="marcarCasa(event,1)"></span>
+          <span class="tile" id="casa2" onclick="marcarCasa(event, 2)"></span>
+          <span class="tile" id="casa3" onclick="marcarCasa(event, 3)"></span>
+        </div>
+        <div class="tile_row">
+          <span class="tile" id="casa4" onclick="marcarCasa(event, 4)"></span>
+          <span class="tile" id="casa5" onclick="marcarCasa(event, 5)"></span>
+          <span class="tile" id="casa6" onclick="marcarCasa(event, 6)"></span>
+        </div>
+        <div class="tile_row">
+          <span class="tile" id="casa7" onclick="marcarCasa(event, 7)"></span>
+          <span class="tile" id="casa8" onclick="marcarCasa(event, 8)"></span>
+          <span class="tile" id="casa9" onclick="marcarCasa(event, 9)"></span>
+        </div>
+        <button class="botao" type="button" onclick="reiniciar()">Reiniciar</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
